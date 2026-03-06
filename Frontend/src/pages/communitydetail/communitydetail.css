@@ -1,0 +1,278 @@
+/* ====== COMMUNITY DETAIL CONTAINER ====== */
+.community-detail-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #fffaf0, #ffe5b4); /* Light orange gradient */
+  color: #333; /* Dark text for readability */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  padding: 50px 20px; /* Add padding for spacing */
+  box-sizing: border-box;
+}
+
+/* ====== MAIN CONTENT CARD ====== */
+.community-detail-container .community-detail-card {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-left: 10px solid #ff9800;
+}
+
+/* ====== HEADINGS ====== */
+.community-detail-container .community-detail-card h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #e65100;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 4px solid #ffa726;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.community-detail-container .community-detail-card h3 {
+  font-size: 1.8rem;
+  color: #e65100;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ffa726;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ====== INFO SECTION ====== */
+.community-detail-container .info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.community-detail-container .info-section p {
+  font-size: 1.2rem;
+  color: #b34700; /* A deeper orange for contrast */
+  font-weight: 500;
+  width: 48%;
+  background: #fff7e6; /* A softer white-orange background */
+  padding: 14px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 12px rgba(255, 140, 0, 0.3); /* A stronger orange glow */
+  border-left: 5px solid #ff8c00; /* A bright orange accent */
+  transition: all 0.3s ease-in-out;
+}
+
+.community-detail-container .info-section p:hover {
+  background: #ffecb3; /* Light orange highlight */
+  box-shadow: 4px 4px 15px rgba(255, 140, 0, 0.4);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .community-detail-container .info-section p {
+    width: 100%;
+  }
+}
+
+/* ====== MAIN IMAGE ====== */
+.community-detail-container .main-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-detail-container .main-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== PHOTO GALLERY ====== */
+.community-detail-container .photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.community-detail-container .photos img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.community-detail-container .photos img:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* ====== VIDEO GALLERY ====== */
+.community-detail-container .videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.community-detail-container .videos video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.community-detail-container .videos video:hover {
+  transform: scale(1.05);
+}
+
+/* ====== LIGHTBOX FOR IMAGES ====== */
+.community-detail-container .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.community-detail-container .lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ====== BUTTONS ====== */
+.community-detail-container button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.community-detail-container button:hover {
+  background: #e65100;
+  transform: scale(1.05);
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+  .community-detail-container .community-detail-card {
+    padding: 20px;
+  }
+
+  .community-detail-container .community-detail-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .community-detail-container .community-detail-card h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 🎵 Enhanced Styling for Community Detail Page */
+.community-detail-container .artist-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff; /* White background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 900px;
+  text-align: center;
+}
+
+.community-detail-container .artist-heading {
+  font-size: 1.8em;
+  color: #ff6f00; /* Bright orange */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.community-detail-container .artist-list {
+  display: flex;
+  flex-wrap: wrap; /* Wrap artists for responsiveness */
+  justify-content: center;
+  gap: 20px; /* Add spacing between artist cards */
+}
+
+.community-detail-container .artist-card {
+  background: #fff7e6; /* Light orange background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-detail-container .artist-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.community-detail-container .artist-profile-picture {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.community-detail-container .artist-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff6f00; /* Bright orange */
+  margin-bottom: 5px;
+}
+
+.community-detail-container .artist-instrument {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.community-detail-container .artist-button {
+  background: #ff6f00; /* Bright orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.community-detail-container .artist-button:hover {
+  background: #e65100; /* Darker orange on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}

@@ -1,0 +1,184 @@
+/* Navbar container */
+.bd-example .navbar {
+  background-color: #ffe49c !important; /* Soft yellow */
+  padding: 0 32px;
+  border: none;
+  border-top: 8px solid #232323; /* Thick dark top border */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 54px;
+  box-shadow: none;
+}
+
+/* Navbar content alignment */
+.bd-example .navbar .navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 54px;
+}
+
+/* Logo styling */
+.bd-example .navbar-brand {
+  display: flex;
+  align-items: center;        /* Vertically center the text */
+  height: 54px;               /* Match navbar min-height for perfect centering */
+  font-size: 1.2rem;
+  color: #664200;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+
+/* Navigation links styling */
+.bd-example .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 18px; /* Tighter gap between brand and nav links */
+  gap: 40px;         /* Tighter gap between nav links */
+  height: 54px;      /* Ensure vertical centering */
+  margin-left:100px !important;
+}
+
+.bd-example .nav-item {
+  margin: 0;
+  display: flex; /* Ensure flex for vertical alignment */
+  align-items: center;
+  height: 54px;
+}
+
+.bd-example .nav-link {
+  color: #a67c2d;
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0;
+  display: flex; /* Flex for vertical alignment */
+  align-items: center;
+  height: 54px;
+}
+
+.bd-example .nav-link:hover {
+  color: #664200;
+  background: none;
+  text-decoration: none;
+}
+
+/* Auth buttons container */
+.bd-example .auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+}
+
+/* Login button: outline style */
+.bd-example .auth-buttons .btn-outline-custom-orange {
+  padding: 6px 18px;
+  font-size: 1rem;
+  background: none !important;
+  border: 1.5px solid #a67c2d !important;
+  color: #a67c2d !important;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  box-shadow: none;
+}
+
+.bd-example .auth-buttons .btn-outline-custom-orange:hover {
+  color: #664200 !important;
+  border-color: #664200 !important;
+  background: #ffe49c !important;
+}
+
+/* Signup button: filled style */
+.bd-example .auth-buttons .btn-custom-orange {
+  padding: 6px 18px;
+  font-size: 1rem;
+  background-color: #a06700 !important;
+  border: 1.5px solid #a06700 !important;
+  color: #fff !important;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: background 0.2s, border-color 0.2s;
+  box-shadow: none;
+}
+
+.bd-example .auth-buttons .btn-custom-orange:hover {
+  background-color: #664200 !important;
+  border-color: #664200 !important;
+}
+.bd-example .auth-buttons .btn-outline-custom-orange,
+.bd-example .auth-buttons .btn-custom-orange {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  /* ...rest... */
+}
+@media (max-width: 400px) {
+  .bd-example .auth-buttons .btn-outline-custom-orange,
+  .bd-example .auth-buttons .btn-custom-orange {
+    font-size: 0.85rem;
+    padding: 0.4em 0.7em;
+  }
+}
+.navbar-left-group {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  height: 54px;
+}
+.navbar-left-group .dropdown{
+  margin-bottom: 0  ;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .bd-example .navbar {
+    padding: 0 12px;
+  }
+  .bd-example .navbar-nav {
+    gap: 14px;
+    margin-left: 8px;
+  }
+  .bd-example .navbar-brand {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-toggler{
+    margin-right: 8px;
+  }
+  .navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+  
+  .bd-example .navbar .navbar-content {
+    height: 48px;
+  }
+  .bd-example .navbar-brand {
+    font-size: 1.1rem;
+    height: 48px;
+  }
+  .bd-example .navbar-nav {
+    display: none;
+  }
+  /* Add padding to dropdown menu to avoid touching brand name */
+  .dropdown-menu {
+    padding: 5px;
+    margin-left: 0;
+    margin-top: 8px; /* Space below brand */
+    z-index: 10;
+  }
+}

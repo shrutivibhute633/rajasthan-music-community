@@ -1,0 +1,421 @@
+.card-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 1%;
+    background: transparent;
+    border-radius: 2%;
+}
+
+.title {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.community-detail-main-image-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.community-detail-main-image-label {
+    font-size: 100%;
+    font-family: 'inter', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.community-detail-main-image-directive {
+    font-size: 100%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.media-label {
+    font-size: 2rem;
+    font-family: 'inter', sans-serif;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+.media-directive {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+.media-item {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.media-image-mainimage {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.media-item .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #664200;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    /* Ensure it remains visible */
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.media-item .remove-btn:hover {
+    background: #ffe5b2;
+    color: #b5853a;
+}
+
+.media-add-mainimage {
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: dashed 3px #ae6d0b;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 0.5rem !important;
+    background-color: transparent;
+    align-self: center;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.form-responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px 0;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.form-field {
+    margin-bottom: 28px;
+}
+
+.field-label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #f5b340;
+    margin-left: 2px;
+    font-size: 1.05em;
+}
+
+.input-text,
+.textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 7px;
+    font-size: 100%;
+    background: #fff;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+
+.input-text:focus,
+.textarea:focus {
+    border: 1.5px solid #f5b340;
+    outline: none;
+}
+
+.textarea {
+    min-height: 68px;
+    resize: vertical;
+}
+
+@media (max-width: 1240px) {
+    .form-responsive-container {
+        max-width: 98vw;
+        padding: 0 1vw;
+    }
+}
+
+
+
+
+.mobile-number-section {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-number-info {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #b06a11;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.mobile-info-text {
+    color: #b06a11;
+    font-size: 1rem;
+}
+
+.mobile-number-input-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.mobile-number-label {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 400;
+    margin-right: 4px;
+    min-width: 80px;
+}
+
+.mobile-number-input {
+    width: 150px;
+    padding: 8px 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+    margin-right: 1rem;
+}
+
+.mobile-number-input.error {
+    border-color: #dc3545;
+}
+
+.add-mobile-number-btn {
+    padding: 8px 32px;
+    background: #b06a11;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-mobile-number-btn:hover {
+    background: #8a510c;
+}
+
+.mobile-number-error {
+    color: #dc3545;
+    font-size: 0.98rem;
+    margin: 0;
+    min-height: 18px;
+}
+
+.mobile-number-error-space {
+    color: #fff;
+    font-size: 0.98rem;
+    margin: 0;
+    min-height: 18px;
+}
+
+.mobile-number-list {
+    margin-top: 0px;
+}
+
+.mobile-number-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-number-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    gap: 14px;
+}
+
+.mobile-number-value {
+    color: #222;
+    font-size: 1rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.mobile-number-actions {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.edit-mobile-number-btn,
+.delete-mobile-number-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background 0.15s;
+    outline: none;
+}
+
+.edit-mobile-number-btn:focus,
+.delete-mobile-number-btn:focus {
+    background: #ffe5b2;
+}
+
+.action-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    stroke: #b5853a;
+    transition: stroke 0.18s;
+}
+
+.edit-mobile-number-btn:hover .action-icon,
+.edit-mobile-number-btn:focus .action-icon {
+    stroke: #a06c2a;
+}
+
+.delete-mobile-number-btn:hover .action-icon,
+.delete-mobile-number-btn:focus .action-icon {
+    stroke: #e9563f;
+}
+
+@media (max-width: 400px) {
+    .mobile-number-actions {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .edit-mobile-number-btn,
+    .delete-mobile-number-btn {
+        min-width: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .action-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .media-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .media-image-mainimage {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .media-add-mainimage {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .mobile-number-input-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .mobile-number-input-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 450px) {
+    .mobilenumber-arrangement-short {
+        display: flex;
+    }
+
+    .mobile-number-input {
+        margin-right: 5px;
+    }
+
+    .add-mobile-number-btn {
+        padding: 8px 15px;
+    }
+}

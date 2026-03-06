@@ -1,0 +1,53 @@
+.artist-corner-container {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .artist-corner-container h1 {
+    color: #a72f00; /* Matching the navbar brand color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .btn-custom-orange {
+    padding: 6px 12px;
+    font-size: 1rem; /* Base font size */
+    background-color: #cf7f08 !important; /* New base color */
+    border: 1px solid #cf7f08 !important;
+    color: white !important;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-custom-orange:hover {
+    background-color: #ea900b !important; /* New hover color */
+    border-color: #ea900b !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 700px) {
+    .artist-corner-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .btn-custom-orange {
+      font-size: 0.9rem; /* Smaller buttons on mobile */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .artist-corner-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .btn-custom-orange {
+      font-size: 0.8rem; /* Even smaller buttons on mobile */
+    }
+  }

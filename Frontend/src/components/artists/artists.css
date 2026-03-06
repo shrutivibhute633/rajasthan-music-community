@@ -1,0 +1,136 @@
+/* ====== ARTIST DETAIL PAGE ====== */
+.artist-detail-page {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #fffaf0, #ffe5b4); /* Light orange gradient */
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ====== ARTIST HEADER ====== */
+  .artist-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px;
+    margin-bottom: 30px;
+  }
+  
+  .artist-profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .artist-info {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .artist-name {
+    font-size: 2.5rem;
+    color: #ff6f00; /* Bright orange */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .artist-instrument {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .artist-description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ====== MEDIA SECTION ====== */
+  .artist-media {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .media-heading {
+    font-size: 1.8rem;
+    color: #ff6f00; /* Bright orange */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* ====== PHOTO GALLERY ====== */
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .photo-item {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .photo-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  /* ====== VIDEO GALLERY ====== */
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .video-item {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ====== RESPONSIVE DESIGN ====== */
+  @media (max-width: 768px) {
+    .artist-header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .artist-profile-picture {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .artist-name {
+      font-size: 2rem;
+    }
+  
+    .media-heading {
+      font-size: 1.5rem;
+    }
+  }

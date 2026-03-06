@@ -1,0 +1,104 @@
+.edit-group-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+
+.edit-group-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.edit-group-modal-content h2 {
+    margin-top: 0;
+    color: black;
+}
+
+.edit-group-modal-content p {
+    margin: 10px 0;
+}
+
+.edit-group-modal-button {
+    padding: 8px 16px;
+    background-color: #b06a11;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-group-modal-button:hover {
+    background-color: #8a510c;
+}
+
+
+
+
+.edit-group-approve-button,
+.edit-group-reject-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    transition: background 0.18s, box-shadow 0.18s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    outline: none;
+}
+
+.edit-group-approve-button {
+    background: #27ae60;
+    color: #fff;
+}
+
+.edit-group-approve-button:hover:not(:disabled) {
+    background: #219150;
+    box-shadow: 0 4px 16px rgba(39, 174, 96, 0.13);
+}
+
+.edit-group-reject-button {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.edit-group-reject-button:hover:not(:disabled) {
+    background: #c0392b;
+    box-shadow: 0 4px 16px rgba(231, 76, 60, 0.13);
+}
+
+.edit-group-approve-button:disabled,
+.edit-group-reject-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.approve-icon,
+.reject-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 400px) {
+    .edit-group-approve-reject-buttons {
+        gap: 10vw;
+    }
+}
+
+
+.edit-group-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}

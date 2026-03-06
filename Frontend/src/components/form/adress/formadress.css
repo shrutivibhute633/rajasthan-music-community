@@ -1,0 +1,106 @@
+.address-step-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .address-title {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 22px;
+    color: #232323;
+  }
+  
+  .address-actions {
+    width: 90vw;
+    max-width: 900px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .choose-location-btn {
+    background: none;
+    border: none;
+    color: #a06700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .choose-location-btn:hover {
+    color: #b5853a;
+  }
+  
+  .leaflet-map-wrapper {
+    width: 90vw;
+    max-width: 900px;
+    background: #ddd;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  .leaflet-map-box {
+    width: 100%;
+    height: 400px;
+    background: #ddd;
+    border-radius: 0;
+  }
+  
+
+
+  .address-searchbar-wrapper {
+    position: relative;
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 auto 18px auto;
+  }
+  .address-searchbar {
+    width: 100%;
+    padding: 11px 15px;
+    border: 1.5px solid #b5853a;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    background: #fff9f1;
+    color: #232323;
+    outline: none;
+  }
+  .address-searchbar:focus {
+    border-color: #ae6d0b;
+  }
+  .address-search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #e0c17d;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 12px #b5853a22;
+    max-height: 210px;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .address-search-suggestion {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #232323;
+    transition: background 0.13s;
+  }
+  .address-search-suggestion:hover {
+    background: #ffe5b2;
+    color: #ae6d0b;
+  }

@@ -1,0 +1,271 @@
+.about-us-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background-color: #f9f9f9; /* Light background for the page */
+  padding-bottom: 50px;
+}
+
+.about-header {
+  text-align: center;
+  background: linear-gradient(135deg, hsl(48, 100%, 50%,0.5),hsl(36, 93%, 42%,0.5));
+  color: hsl(36, 93%, 42%);
+  padding: 60px 20px;
+  border-bottom: 5px solid hsl(48, 100%, 50%);
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.about-header p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+section {
+  background: white; /* White background for sections */
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #e68900;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffcc00; /* Underline for section titles */
+  padding-bottom: 5px;
+}
+
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify; /* Justify text for better readability */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.our-team h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.our-team ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.our-team ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 20px;
+    margin: 15px auto;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .our-team ul li {
+    font-size: 0.9rem;
+  }
+}
+
+.research-significance {
+  background: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.research-significance h2 {
+  font-size: 2rem;
+  color: #e68900;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+.research-significance p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.significance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.significance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.significance-item .icon {
+  font-size: 2rem;
+  color: #e68900;
+  flex-shrink: 0;
+}
+
+.significance-item div {
+  flex: 1;
+}
+
+.significance-item strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.significance-item p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .research-significance h2 {
+    font-size: 1.8rem;
+  }
+
+  .significance-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .significance-item .icon {
+    font-size: 1.8rem;
+  }
+
+  .significance-item strong {
+    font-size: 1.1rem;
+  }
+
+  .significance-item p {
+    font-size: 0.9rem;
+  }
+}
+
+.objectives {
+  background: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.objectives h2 {
+  font-size: 2rem;
+  color: #e68900;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.objective-item .icon {
+  font-size: 2rem;
+  color: #e68900;
+  flex-shrink: 0;
+}
+
+.objective-item div {
+  flex: 1;
+}
+
+.objective-item strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.objective-item p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .objectives h2 {
+    font-size: 1.8rem;
+  }
+
+  .objective-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .objective-item .icon {
+    font-size: 1.8rem;
+  }
+
+  .objective-item strong {
+    font-size: 1.1rem;
+  }
+
+  .objective-item p {
+    font-size: 0.9rem;
+  }
+}

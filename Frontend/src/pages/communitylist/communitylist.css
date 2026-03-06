@@ -1,0 +1,517 @@
+/* 🎵 Light Theme for Music Community List Page */
+.community-list-page {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: #fffaf0; /* Light orange background */
+  color: #333; /* Dark text for readability */
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+
+/* 🎼 Header Styling */
+.list-header {
+  background: #ffffff; /* White background */
+  color: #ff6f00; /* Light orange text */
+  padding: 80px 20px;
+  border-bottom: 2px solid #ffe0b2; /* Subtle border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.list-header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.list-header p {
+  font-size: 1.2em;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* 🎶 Community List Styling */
+.community-list-page .community-list-section .community-list-ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.community-list li {
+  font-size: 1.2em;
+  margin: 15px 0;
+  background: #ffffff; /* White background for list items */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.community-list li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.community-list-page .community-list-section .community-list-ul .community-list-item .community-list-link {
+  text-decoration: none;
+  color: #ff6f00; /* Light orange link color */
+  font-weight: bold;
+  display: block;
+}
+
+.community-list a:hover {
+  text-decoration: underline;
+  color: #e65100; /* Darker orange on hover */
+}
+
+/* 🎤 Add Community Button */
+.add-community-button {
+  background: #ff6f00; /* Light orange background */
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-community-button:hover {
+  background: #e65100; /* Darker orange on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* 🎧 Error & Loading Message */
+.community-list-page .community-list-error-message,
+.community-list-page .community-list-loading-message {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #555; /* Neutral gray color */
+}
+
+/* 🔍 Search Input Styling */
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ffe0b2; /* Light orange border */
+  border-radius: 25px;
+  outline: none;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ff6f00; /* Light orange focus */
+  box-shadow: 0 4px 10px rgba(255, 111, 0, 0.2); /* Light orange glow */
+}
+
+/* 📱 Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .community-list-page .community-list-header {
+    padding: 50px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .community-list-page .community-list-header h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .community-list-page .community-list-header p {
+    font-size: 1rem; /* Adjusted paragraph font size */
+  }
+
+  .community-list-page .community-list-section .community-list-ul {
+    max-width: 90%; /* Adjusted width for smaller screens */
+    margin: 20px auto;
+  }
+
+  .community-list li {
+    font-size: 1em; /* Smaller font size for list items */
+    padding: 15px; /* Reduced padding */
+    margin: 10px 0; /* Reduced margin */
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start;
+  }
+
+  .community-list-page .community-list-add-community-button {
+    font-size: 1em; /* Smaller button font size */
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 20px; /* Slightly smaller border radius */
+  }
+
+  .community-list-page .community-list-error-message,
+  .community-list-page .community-list-loading-message {
+    font-size: 1rem; /* Adjusted font size for error/loading messages */
+  }
+}
+
+
+/* Community List Item Styling */
+.community-item {
+  margin: 20px 0;
+  list-style: none;
+}
+
+.community-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.community-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.community-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.community-details {
+  flex: 1;
+}
+
+.community-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.community-instruments,
+.community-community {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+
+/* Community List Item Styling */
+.community-item {
+  margin: 20px 0;
+  list-style: none;
+}
+
+.community-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.community-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 20px; /* Add spacing between image and details */
+}
+
+.community-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.community-image {
+  width: 150px; /* Larger image width */
+  height: 150px; /* Larger image height */
+  border-radius: 15px; /* Slightly rounded corners */
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.community-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; /* Take up remaining space */
+}
+
+.community-name {
+  font-size: 1.5em; /* Larger font size for group name */
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.community-instruments,
+.community-community {
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .community-card {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .community-image {
+    width: 120px; /* Smaller image for mobile */
+    height: 120px;
+    margin-bottom: 15px; /* Add spacing below the image */
+  }
+
+  .community-details {
+    align-items: center; /* Center-align details */
+  }
+
+  .community-name {
+    font-size: 1.3em; /* Adjust font size for mobile */
+  }
+
+  .community-instruments,
+  .community-community {
+    font-size: 1em; /* Adjust font size for mobile */
+  }
+}
+
+/* Community List Styling */
+.community-list ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+}
+
+.community-item {
+  list-style: none;
+}
+
+.community-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.community-card {
+  display: flex;
+  flex-direction: column; /* Stack image and details vertically */
+  align-items: center;
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure cards are consistent in height */
+}
+
+.community-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.community-image {
+  width: 100%; /* Full width of the card */
+  height: 150px; /* Fixed height for images */
+  border-radius: 10px; /* Slightly rounded corners */
+  object-fit: cover; /* Ensure the image fits within the container */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.community-details {
+  text-align: center; /* Center-align text */
+}
+
+.community-name {
+  font-size: 1.3em; /* Larger font size for group name */
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.community-instruments,
+.community-community {
+  font-size: 1em; /* Slightly larger font size */
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .community-list ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .community-image {
+    height: 120px; /* Smaller image height for mobile */
+  }
+
+  .community-name {
+    font-size: 1.2em; /* Adjust font size for mobile */
+  }
+
+  .community-instruments,
+  .community-community {
+    font-size: 0.9em; /* Adjust font size for mobile */
+  }
+}
+
+/* Ensure .community-list covers the entire parent div */
+
+
+/* 🎵 Community Card Styling */
+.community-card {
+  display: flex;
+  flex-direction: column; /* Stack image and details vertically */
+  align-items: center;
+  background: linear-gradient(135deg, #fffaf0, #ffe5b4); /* Light orange gradient background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure consistent height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.community-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* 🎨 Community Image Styling */
+.community-image {
+  width: 100%; /* Full width of the card */
+  height: 180px; /* Larger image height */
+  border-radius: 10px; /* Slightly rounded corners */
+  object-fit: cover; /* Ensure the image fits within the container */
+  margin-bottom: 15px; /* Space below the image */
+  border: 3px solid #ffcc80; /* Light orange border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+/* 🎶 Community Details Styling */
+.community-details {
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Add spacing between sections */
+}
+
+.community-name {
+  font-size: 1.6em; /* Larger font size for group name */
+  font-weight: bold;
+  color: #ff6f00; /* Light orange text */
+  margin: 0 0 10px;
+  text-transform: uppercase; /* Make the name uppercase for emphasis */
+  letter-spacing: 1px; /* Add spacing between letters */
+}
+
+.community-instruments {
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #555; /* Neutral gray color */
+  margin: 5px 0;
+  font-style: italic; /* Italicize instruments for a stylish look */
+}
+
+.community-community {
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #333; /* Darker gray for emphasis */
+  margin: 5px 0;
+  font-weight: bold; /* Bold the community name */
+}
+
+/* 🎤 Add a Decorative Divider */
+.community-details hr {
+  border: none;
+  border-top: 2px dashed #ffcc80; /* Dashed light orange divider */
+  margin: 10px 0;
+  width: 80%; /* Centered and smaller width */
+}
+
+/* 🎤 Add Community Button */
+.add-community-button {
+  background: #ff6f00; /* Light orange background */
+  color: white;
+  font-size: 1.2em; /* Slightly larger font size */
+  font-weight: bold;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 30px; /* More rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 30px 0; /* Add spacing around the button */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-community-button:hover {
+  background: #e65100; /* Darker orange on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* 📱 Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .community-card {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .community-image {
+    height: 150px; /* Smaller image height for mobile */
+  }
+
+  .community-name {
+    font-size: 1.4em; /* Adjust font size for mobile */
+  }
+
+  .community-instruments,
+  .community-community {
+    font-size: 1.2em; /* Slightly larger font size for better readability */
+    color: #bd1010; /* Neutral gray color for text */
+    margin: 8px 0; /* Add spacing between elements */
+    font-style: italic; /* Italicize for a stylish look */
+    text-align: center; /* Center-align the text */
+    background: #fffaf0; /* Light orange background for emphasis */
+    padding: 8px 15px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block; /* Ensure it wraps neatly around the text */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .community-instruments:hover,
+  .community-community:hover {
+    background: #ffe5b4; /* Slightly darker orange on hover */
+    color: #333; /* Darker text color for contrast */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+
+
+  .add-community-button {
+    font-size: 1em; /* Smaller button font size */
+    padding: 12px 20px; /* Reduced padding */
+    border-radius: 25px; /* Slightly smaller border radius */
+  }
+}

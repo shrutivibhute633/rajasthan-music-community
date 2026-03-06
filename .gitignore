@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+venv/
+Tourist-api/.env
+Frontend/.env
+Frontend/node_modules/
+
+
+
+
+
